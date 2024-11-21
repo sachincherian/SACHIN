@@ -11,38 +11,9 @@ The R script provided processes the dataset, performs basic cleaning, and genera
 2. **Boxplot of Ratings by App Type**
 3. **Scatter Plot of Ratings vs. Installs**
 
-## Files Included
+Description of Visualizations
+Histogram of App Ratings by Type: This histogram shows the distribution of app ratings for both Free and Paid apps. The ratings are divided into different bins to better understand the frequency of various rating ranges.
 
-- **R Script**: `analysis.R` – This script loads the dataset, cleans it, and creates visualizations.
-- **Plots**:
-  - `histogram.png`: A histogram showing the distribution of app ratings, divided by app type (Free or Paid).
-  - `boxplot.png`: A boxplot visualizing the spread of ratings by app type.
-  - `scatter_plot.png`: A scatter plot showing the relationship between app ratings and the number of installs.
+Boxplot of Ratings by App Type: This boxplot compares the ratings of Free and Paid apps, allowing us to see the median, interquartile range, and potential outliers for both app types.
 
-## Dataset
-
-The dataset is a CSV file named `GooglePlayStoreApps.csv`. It contains the following columns:
-
-- `App`: Name of the app.
-- `Category`: The category to which the app belongs.
-- `Rating`: Average user rating of the app.
-- `Reviews`: Number of reviews.
-- `Size_in_MB`: Size of the app in MB.
-- `Installs`: Number of installs.
-- `Type`: Whether the app is free or paid.
-- `Price`: Price of the app.
-- `Content Rating`: Age group that the app is rated for.
-- `Genres`: Genres associated with the app.
-- `Last Updated`: Date when the app was last updated.
-- `CURRENT_VERSION`: The current version of the app.
-- `ANDROID_VERSION`: Minimum Android version required for the app.
-
-## How to Run the Code
-
-To run the R script and generate the plots, follow these steps:
-
-1. **Install Required Packages**:
-   If you don't have the required packages installed, you can install them using the following commands in R:
-   
-   ```R
-   install.packages(c("dplyr", "ggplot2", "tidyr", "readr", "ggpubr"))
+Scatter Plot of Ratings vs. Installs: This scatter plot visualizes the relationship between the number of installs and the average rating of the apps. A linear regression line is also added to show the trend.
